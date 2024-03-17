@@ -68,10 +68,20 @@ function updateAsteroidDetails(data) {
 
 // Initial setup
 function init() {
-  var audio = document.querySelector(".startAudio");
-  audio.onloadedmetadata = function() {
-    audio.play();
-    audio.loop = true;
+  var audio1 = document.getElementById("startAudio1");
+  var audio2 = document.getElementById("startAudio2");
+  var audio3 = document.getElementById("startAudio3");
+  audio1.onloadedmetadata = function() {
+    audio1.play();
+    audio1.loop = true;
+  };
+  audio2.onloadedmetadata = function() {
+    audio2.play();
+    audio2.loop = true;
+  };
+  audio3.onloadedmetadata = function() {
+    audio3.play();
+    audio3.loop = true;
   };
   fetchAsteroidData(); // Fetch initial data
   setInterval(fetchAsteroidData, 60000); // Fetch data every minute

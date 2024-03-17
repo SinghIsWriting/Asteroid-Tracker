@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 10px;
+  background-image: url('asteroids_to_earth.jpg');
+  object-fit: contain;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  border-radius: 66px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header .date{
+  font-weight: 600;
+  background-color: rgb(0, 130, 130);
+  padding: 20px;
+  border-radius: 66px;
+}
+.header #date{
+  font-weight: 400;
+  color: silver;
+}
+.header .date:hover{
+  background-color: rgb(0, 165, 165);
+  box-shadow: 0px 8px 10px cyan
+}
+.header .closest{
+  font-weight: 600;
+  background-color: rgb(164, 0, 0);
+  padding: 20px;
+  border-radius: 66px;
+}
+.header #closest{
+  font-weight: 400;
+  color: silver;
+}
+.header .closest:hover{
+  background-color: rgb(197, 0, 0);
+  box-shadow: 0px 8px 10px red
+}
+
+.header:hover{
+  box-shadow: 0px 8px 10px rgb(255 255 255 / 50%)
+}
+
+.tracker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.asteroid-info {
+  flex: 0.9;
+  padding: 20px;
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
+  color: white;
+  border: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.asteroid-info h2{
+  color: aqua;
+}
+.asteroid-info:hover{
+  box-shadow: 4px 2px 10px cyan;
+}
+
+.animation {
+  height: 200px;
+  flex: 1;
+  position: relative;
+}
+.asteroid1{
+  height: 250px;
+  width: 250px;
+}
+.asteroid2{
+  height: 150px;
+  width: 150px;
+}
+
+.details {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.details h3{
+  color: greenyellow;
+}
+.details .astro{
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.details .astro:hover{
+  box-shadow: -2px -1px 10px white;
+}
+.details .astro span{
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  color: silver;
+}
+
+.asteroid1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-50%);
+  animation: fall_1 6s infinite linear;
+}
+.asteroid2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-50%);
+  animation: fall_2 7s infinite linear;
+}
+
+.asteroid3 {
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(-50%);
+  animation: fall_3 8s infinite linear;
+}
+.asteroid4 {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(-50%);
+  animation: fall_4 8s infinite linear;
+}
+
+@keyframes fall_1 {
+  from {
+    top: 0;
+    right: 0;
+  }
+  to {
+    top: 100vh;
+    right: 50vw;
+  }
+}
+@keyframes fall_2 {
+  from {
+    top: 50;
+    right: 60;
+  }
+  to {
+    top: 50vh;
+    right: 100vw;
+  }
+}
+@keyframes fall_3 {
+  from {
+    top: 50;
+    right: 60;
+  }
+  to {
+    top: 50vh;
+    right: 100vw;
+  }
+}
+@keyframes fall_4 {
+  from {
+    top: 0;
+    right: 0;
+  }
+  to {
+    top: 100vh;
+    right: 80vw;
+  }
+}

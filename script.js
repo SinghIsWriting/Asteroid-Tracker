@@ -68,6 +68,11 @@ function updateAsteroidDetails(data) {
 
 // Initial setup
 function init() {
+  var audio = document.querySelector(".startAudio");
+  audio.onloadedmetadata = function() {
+    audio.play();
+    audio.loop = true;
+  };
   fetchAsteroidData(); // Fetch initial data
   setInterval(fetchAsteroidData, 60000); // Fetch data every minute
   setInterval(animateAsteroid, 1000); // Update animation every second

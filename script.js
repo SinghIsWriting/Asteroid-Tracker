@@ -6,13 +6,20 @@ async function fetchAsteroidData() {
   const setDate = document.querySelector("#date");
   setDate.innerHTML = dateString;
   try {
-    const response = await fetch(
-      `https://api.nasa.gov/neo/rest/v1/feed?start_date=${dateString}&end_date=${dateString}&api_key=n4cxFgzhVOZEP8t7H43eNyyY5dCstQzLkq6sfKJ4`
-    );
-    // console.log(await response.json());
-    const data = await response.json();
-    console.log(data);
-    updateAsteroidDetails(data);
+    fetch('./config.json')
+      .then(response => response.json())
+      .then(async config => {
+        console.log(config.API_KEY);
+        console.log(config.API_URL);
+        const response = await fetch(
+          `${config.API_URL}?start_date=${dateString}&end_date=${dateString}&api_key=${config.API_KEY}`
+        );
+        // console.log(await response.json());
+        const data = await response.json();
+        console.log(data);
+        updateAsteroidDetails(data);
+      })
+      .catch(error => console.error('Error loading config:', error));
   } catch (error) {
     console.error("Error fetching asteroid data:", error);
   }

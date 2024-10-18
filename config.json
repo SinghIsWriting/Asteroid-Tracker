@@ -1,0 +1,4 @@
+{
+  "API_KEY": "your-api-key",
+  "API_URL": "https://api.nasa.gov/neo/rest/v1/feed"
+}

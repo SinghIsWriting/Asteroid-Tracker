@@ -165,7 +165,7 @@ body {
     right: 0;
   }
   to {
-    top: 100vh;
+    top: 80vh;
     right: 50vw;
   }
 }
@@ -175,7 +175,7 @@ body {
     right: 60;
   }
   to {
-    top: 50vh;
+    top: 60vh;
     right: 100vw;
   }
 }
@@ -185,8 +185,8 @@ body {
     right: 60;
   }
   to {
-    top: 50vh;
-    right: 100vw;
+    top: 70vh;
+    right: 80vw;
   }
 }
 @keyframes fall_4 {
@@ -195,7 +195,7 @@ body {
     right: 0;
   }
   to {
-    top: 100vh;
+    top: 90vh;
     right: 80vw;
   }
 }

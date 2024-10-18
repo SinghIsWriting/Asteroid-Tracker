@@ -30,8 +30,9 @@ const detailsContainer = document.querySelector(".details");
 // Update asteroid details
 function updateAsteroidDetails(data) {
   let arr = Array();
+  let apiData = ``;
   for (let i = 0; i < data.near_earth_objects[dateString].length; i++) {
-    detailsContainer.innerHTML += `
+    apiData += `
   <div class= "astro">
   <h3>[${i + 1}] Name: ${data.near_earth_objects[dateString][i].name} | ID: ${
       data.near_earth_objects[dateString][i].id
@@ -69,6 +70,7 @@ function updateAsteroidDetails(data) {
   </div>`;
   arr.push(Math.round(data.near_earth_objects[dateString][i]["close_approach_data"][0]["miss_distance"]["kilometers"]));
   }
+  detailsContainer.innerHTML = apiData;
   const min = Math.min(...arr);
   document.querySelector("#closest").innerText = `${min}`;
 }

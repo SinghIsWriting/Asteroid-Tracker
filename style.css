@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   height: 100vh;
   padding: 10px;
-  background-image: url('asteroids_to_earth.jpg');
+  background-image: url('./images/asteroids_to_earth.jpg');
   object-fit: contain;
 }
 

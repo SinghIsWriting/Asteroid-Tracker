@@ -39,7 +39,9 @@ cd Asteroid-Tracker
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any questions or suggestions, please contact Abhishek Singh and sabhisheksingh343104@gmail.com.
+* Email: sabhisheksignh343104@gmail.com
+* GitHub: [SinghIsWriting](https://github.com/SinghIsWriting)
+* LinkedIn: [Abhishek Singh](https://www.linkedin.com/in/abhishek-singh-bba2662a9)
 
 ## Acknowledgments
 NASA for providing access to the "Asteroid API"

@@ -2,7 +2,11 @@
 
 A simple web application to track the position and details of asteroids approaching Earth.
 
+## Visit it! [Click Here](https://asteroid-tracker.onrender.com)
+
 ![asteroid-snap](https://github.com/SinghIsWriting/Asteroid-Tracker/assets/122283853/514a967e-23c3-4254-ad2a-f2d62b583340)
+
+## Visit it! [Click Here](https://asteroid-tracker.onrender.com)
 
 ## Description
 This project is a web application that displays the position and details of asteroids approaching Earth. It uses `HTML`, `CSS`, and `JavaScript` to render the user interface and handle user input. The data for the asteroids is obtained from the "Asteroid API" (https://api.nasa.gov/) using JavaScript Fetch API.
@@ -16,7 +20,8 @@ git clone https://github.com/SinghIsWriting/Asteroid-Tracker.git
 ```
 cd Asteroid-Tracker
 ```
-3. Open `index.html` in a web browser
+3. Add your nasa API Key in `config.json` file
+4. Open `index.html` in a web browser
 
 ## Features
 * Real-time tracking of asteroids approaching Earth
@@ -34,7 +39,9 @@ cd Asteroid-Tracker
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any questions or suggestions, please contact Abhishek Singh and sabhisheksingh343104@gmail.com.
+* Email: sabhisheksignh343104@gmail.com
+* GitHub: [SinghIsWriting](https://github.com/SinghIsWriting)
+* LinkedIn: [Abhishek Singh](https://www.linkedin.com/in/abhishek-singh-bba2662a9)
 
 ## Acknowledgments
 NASA for providing access to the "Asteroid API"

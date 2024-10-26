@@ -4,7 +4,8 @@ A simple web application to track the position and details of asteroids approach
 
 ## Visit it! [Click Here](https://asteroid-tracker.onrender.com)
 
-![asteroid-snap](https://github.com/SinghIsWriting/Asteroid-Tracker/assets/122283853/514a967e-23c3-4254-ad2a-f2d62b583340)
+![astro1](https://github.com/user-attachments/assets/5e32ca36-de6f-4e3d-937e-e1a4db61b9ee)
+
 
 ## Visit it! [Click Here](https://asteroid-tracker.onrender.com)
 

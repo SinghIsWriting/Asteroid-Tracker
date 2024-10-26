@@ -24,9 +24,10 @@ body {
   border: 2px solid white;
   border-radius: 66px;
   cursor: pointer;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 .header .date{
   font-weight: 600;
   background-color: rgb(0, 130, 130);
@@ -35,7 +36,6 @@ body {
 }
 .header #date{
   font-weight: 400;
-  color: silver;
 }
 .header .date:hover{
   background-color: rgb(0, 165, 165);
@@ -49,7 +49,6 @@ body {
 }
 .header #closest{
   font-weight: 400;
-  color: silver;
 }
 .header .closest:hover{
   background-color: rgb(197, 0, 0);
@@ -65,13 +64,16 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  backdrop-filter: blur(10px) saturate(180%);  /* Glass effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Soft shadow for 3D effect */
 }
 
 .asteroid-info {
-  flex: 0.5;
-  padding: 20px;
+  /* flex: 0.5; */
+  padding: 10px;
   border-radius: 10px;
-  height: 400px;
+  height: 78vh;
   width: 100%;
   color: white;
   border: 1px solid cyan;
@@ -101,11 +103,17 @@ body {
 }
 
 .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 5px;
   margin-top: 10px;
   width: 100%;
   height: auto;
   overflow: auto;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 .details h3{
   color: greenyellow;
@@ -122,7 +130,24 @@ body {
 .details .astro span{
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
-  color: silver;
+  color: red;
+}
+
+@media (max-width: 1085px) {
+  .header{
+      grid-template-columns: 1fr;
+      padding: 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      justify-content: center;
+      align-items: center;
+  }
+  .title{
+    font-size: 0.8rem;
+  }
+  .details{
+    grid-template-columns: 1fr;
+  }
 }
 
 .asteroid1 {
